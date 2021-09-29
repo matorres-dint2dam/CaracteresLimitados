@@ -1,0 +1,17 @@
+﻿<Window x:Class="CaracteresLimitados.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CaracteresLimitados"
+        mc:Ignorable="d"
+        Title="CaracteresLimitados" Height="450" Width="800">
+    <Grid Background="#FF55CDE4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="contador" HorizontalAlignment="Left" Margin="581,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="97" FontSize="24" FontWeight="Bold"><Run Language="es-es" Text="0/140"/><LineBreak/><Run Language="es-es"/></TextBlock>
+        <TextBox x:Name="caja" HorizontalAlignment="Left" Margin="31,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="421" Height="232" TextChanged="caja_TextChanged"/>
+
+    </Grid>
+</Window>
